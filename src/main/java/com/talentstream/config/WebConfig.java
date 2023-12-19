@@ -1,5 +1,8 @@
 package com.talentstream.config;
+<<<<<<< HEAD
 
+=======
+>>>>>>> e5f8b8517aa5ec98d8697af43f3f2ddfe1321873
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -31,8 +34,13 @@ public class WebConfig {
         //config.addAllowedOrigin("");
        // config.addAllowedOrigin("http://localhost:3000");
         //  config.addAllowedOrigin("https://talent-stream-front-end-version2-kwrsb2zt1-eedekarunakar.vercel.app");
+<<<<<<< HEAD
           config.addAllowedOrigin("https://tsa-nagulmeeravali.vercel.app"); 
 
+=======
+           config.addAllowedOrigin("https://tsa-nagulmeeravali.vercel.app"); 
+// config.addAllowedOrigin("https://talent-stream-lalitha12-web.vercel.app");
+>>>>>>> e5f8b8517aa5ec98d8697af43f3f2ddfe1321873
      
         config.setAllowedHeaders(Arrays.asList(
                 HttpHeaders.AUTHORIZATION,
