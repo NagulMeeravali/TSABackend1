@@ -4,7 +4,11 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
+import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
+
+//import com.talentstream.config.WebConfig;
 
 import springfox.documentation.builders.PathSelectors;
 import springfox.documentation.builders.RequestHandlerSelectors;
@@ -31,6 +35,15 @@ public class TalentStreamApplication {
 	                .build();
 	        
 	    }
+	 
+	 public WebMvcConfigurer crossConfigurer() {
+		 
+		 return new WebMvcConfigurer() {
+		  public void addCorsMappings(CorsRegistry registry) {
+			  registry.addMapping("/**").allowedOrigins("*");
+		  }
+		 };
+	 }
 	 
 	 
 
