@@ -34,7 +34,7 @@ import com.talentstream.service.JobRecruiterService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
  
-@CrossOrigin("*")
+
 @RestController
 @RequestMapping("/applicant")
 public class RegisterController {
