@@ -40,7 +40,7 @@ public class TalentStreamApplication {
 		 
 		 return new WebMvcConfigurer() {
 		  public void addCorsMappings(CorsRegistry registry) {
-			  registry.addMapping("/**").allowedOrigins("*");
+			  registry.addMapping("/**").allowedOrigins("https://tsa-nagulmeeravali.vercel.app/");
 		  }
 		 };
 	 }
