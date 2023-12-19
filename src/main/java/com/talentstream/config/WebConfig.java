@@ -1,4 +1,4 @@
-/*package com.talentstream.config;
+package com.talentstream.config;
 
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.context.annotation.Bean;
@@ -31,7 +31,7 @@ public class WebConfig {
         //config.addAllowedOrigin("");
         //config.addAllowedOrigin("http://localhost:3000");
         //  config.addAllowedOrigin("https://talent-stream-front-end-version2-kwrsb2zt1-eedekarunakar.vercel.app");
-          // config.addAllowedOrigin("https://tsa-nagulmeeravali.vercel.app"); 
+           config.addAllowedOrigin("https://tsa-nagulmeeravali.vercel.app"); 
 // config.addAllowedOrigin("https://talent-stream-lalitha12-web.vercel.app");
      
         config.setAllowedHeaders(Arrays.asList(
@@ -54,4 +54,3 @@ public class WebConfig {
 
 }
  
-*/
